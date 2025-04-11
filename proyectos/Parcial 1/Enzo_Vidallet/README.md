@@ -1,51 +1,15 @@
-## Rust
-Instalar la dependencia Rust
+# Circuito de Suma de Cuadrados Modulares con ZK-SNARKs
 
-```
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-```
+Este proyecto implementa un circuito aritmético que verifica `c = (a² + b²) % p` usando pruebas de conocimiento cero.
 
-## Circom
-Instalar circom 
-```
-git clone https://github.com/iden3/circom.git
-```
+## Requisitos
 
-Dentro de la carpeta circom
+- Node.js
+- Circom
+- snarkjs
 
-```
-cargo build --release
-cargo install --path circom
-```
-## Snarkjs
-Instalar snarkjs
+## Instalación
 
-```
-npm install -g snarkjs
-```
-
-## Correr el script con build.sh en la carpeta raiz
-```
-./build.sh
-```
-
-## Verificaciones
-Navegar a la carpeta verificador
-
-Para verificar con node:
-
-```
-npm install
-node verify.js
-```
-
-Para verificar en html desde windows:
-
-```
-explorer.exe verificador.html
-```
-
-cargar los archivos correspondientes y dar verificar
-
-## Link a la documentación
-[documentación](https://docs.google.com/document/d/12tqRcphV9gW-aajoFstfN6HqESrQ_XHOyFbBcnw6gC0/edit?usp=sharing)
+1. Instalar Circom y snarkjs:
+```bash
+npm install -g circom snarkjs
